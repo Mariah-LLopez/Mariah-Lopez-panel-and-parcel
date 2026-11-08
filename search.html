@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+  <title>Shop | Panel & Parcel</title>
+
+  <meta name="description"
+        content="Browse the Panel & Parcel collection of Fae Realm merchandise. Shop character graphic tees, hoodies, art prints, stickers, accessories, and collectibles.">
+
+  <link rel="stylesheet" href="shop.css">
+  <link rel="stylesheet" href="site-header.css">
+</head>
+
+<body>
+
+<header class="site-header">
+  <div class="site-banner">
+    <h1><a href="index.html">Panel & Parcel</a></h1>
+    <p>Merchandise inspired by an original webtoon</p>
+  </div>
+  <nav class="site-nav">
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="search.html" class="active">Shop</a>
+    <a href="checkout.html">Cart</a>
+    <a href="contact.html">Contact Us</a>
+  </nav>
+</header>
+
+<main class="shop-container">
+
+  <div class="breadcrumbs">
+    <a href="index.html">Home</a>
+    <span>/</span>
+    <span>Shop</span>
+  </div>
+
+  <div class="page-intro">
+    <div>
+      <div class="eyebrow">THE COLLECTION</div>
+      <h1>Find a little magic.</h1>
+      <p>Character-inspired favorites, made for life beyond the story.</p>
+    </div>
+    <div class="intro-decoration">✧</div>
+  </div>
+
+  <form id="header-search" class="collection-search" role="search">
+    <label for="searchInput">Search the collection</label>
+    <div class="collection-search-field">
+      <input id="searchInput" type="search"
+             placeholder="Search shirts, prints, collectibles..."
+             autocomplete="off">
+      <button type="submit">Search</button>
+    </div>
+  </form>
+
+  <div class="search-toolbar">
+    <div class="filter-label">SHOP BY CATEGORY</div>
+
+    <div class="chips" id="categoryFilters">
+      <button class="chip active" type="button"
+              data-category="All">All items</button>
+      <button class="chip" type="button"
+              data-category="Apparel">Apparel</button>
+      <button class="chip" type="button"
+              data-category="Art & Prints">Art & Prints</button>
+      <button class="chip" type="button"
+              data-category="Accessories">Accessories</button>
+      <button class="chip" type="button"
+              data-category="Collectibles">Collectibles</button>
+      <button class="chip" type="button"
+              data-category="Stickers & Collectibles">
+        Stickers & Collectibles
+      </button>
+    </div>
+
+    <div class="sort-bar">
+      <p>
+        <strong id="resultCount">8</strong> items
+        <span id="searchDescription">in the collection</span>
+      </p>
+
+      <label for="sortSelect">
+        Sort by
+        <select id="sortSelect">
+          <option value="featured">Featured</option>
+          <option value="low">Price: Low to High</option>
+          <option value="high">Price: High to Low</option>
+          <option value="name">Name: A–Z</option>
+        </select>
+      </label>
+    </div>
+  </div>
+
+  <div class="product-grid" id="productGrid"></div>
+
+  <div class="empty-state" id="emptyState" hidden>
+    <h2>No treasures found</h2>
+    <p>Try another search or browse all categories.</p>
+    <button id="resetSearch" type="button">Show all items</button>
+  </div>
+</main>
+
+<footer class="shop-footer">
+  <div>
+    <strong>Panel & Parcel</strong>
+    <span>Little pieces of another world.</span>
+  </div>
+  <div>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="checkout.html">Checkout</a>
+  </div>
+  <small>&copy; 2026 Panel & Parcel</small>
+</footer>
+
+<script src="shop.js"></script>
+</body>
+</html>

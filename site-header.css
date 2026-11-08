@@ -1,0 +1,94 @@
+/* PANEL & PARCEL — SHARED HEADER */
+
+.site-header,
+header.site-header {
+  background: none !important;
+  color: white !important;
+  padding: 0 !important;
+  text-align: center !important;
+  border: 0 !important;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.site-banner {
+  background: linear-gradient(135deg, #6f42c1, #8b5bd6);
+  padding: 26px 20px 24px;
+  text-align: center;
+}
+
+.site-header .site-banner h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 3rem;
+  line-height: 1.25;
+  letter-spacing: 0;
+  font-weight: 700;
+  color: white;
+  margin: 0 0 10px;
+  padding: 0;
+}
+
+.site-banner h1 a {
+  color: white;
+  text-decoration: none;
+}
+
+.site-header .site-banner p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  color: white;
+  margin: 0;
+}
+
+.site-header .site-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0 30px;
+  min-height: 50px;
+  background: #2f1747;
+  border-top: 2px solid #cbb2f5;
+  padding: 8px 15px;
+}
+
+.site-header .site-nav a {
+  display: inline-block;
+  color: white !important;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.4;
+  text-decoration: none;
+  white-space: nowrap;
+  padding: 5px 10px;
+  margin: 0;
+  border-radius: 6px;
+}
+
+.site-header .site-nav a:hover,
+.site-header .site-nav a:focus-visible {
+  background: #6f42c1;
+}
+
+@media (max-width: 700px) {
+  .site-banner {
+    padding: 24px 14px;
+  }
+
+  .site-header .site-banner h1 {
+    font-size: 2rem;
+  }
+
+  .site-header .site-banner p {
+    font-size: 14px;
+  }
+
+  .site-header .site-nav {
+    gap: 3px 10px;
+  }
+
+  .site-header .site-nav a {
+    font-size: 13px;
+    padding: 8px 6px;
+    max-width: none;
+  }
+}

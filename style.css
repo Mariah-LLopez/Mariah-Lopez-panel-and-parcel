@@ -1,0 +1,579 @@
+/* =========================
+   PANEL & PARCEL - STYLE.CSS
+   ========================= */
+
+
+/* BODY */
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to bottom, #f7f2ff, #ffffff);
+    color: #2f1747;
+    text-align: left;
+}
+
+
+/* HEADER */
+
+header {
+    background: linear-gradient(135deg, #6f42c1, #8b5bd6);
+    color: white;
+    padding: 40px 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3rem;
+    padding-bottom: 10px;
+}
+
+header p {
+    margin-top: 5px;
+    margin-bottom: 25px;
+    font-size: 1.1rem;
+}
+
+
+/* NAVIGATION */
+
+nav {
+    background-color: #2f1747;
+    border-top: 2px solid #cbb2f5;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 18px;
+    padding: 8px 12px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #6f42c1;
+}
+
+
+/* MAIN CONTENT */
+
+main {
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* INTRODUCTION CARD */
+
+.card {
+    max-width: 700px;
+    text-align: left;
+    margin: 0 auto 50px auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(47, 23, 71, 0.15);
+}
+
+.card p {
+    line-height: 1.6;
+}
+
+
+/* HEADINGS */
+
+h2 {
+    color: #6f42c1;
+}
+
+.card h2,
+.about-card h2,
+.contact-card h2,
+.map-card h2 {
+    color: #6f42c1;
+    border-bottom: 2px solid #cbb2f5;
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+
+.contact-card h3 {
+    color: #6f42c1;
+    margin-top: 25px;
+}
+
+
+/* PRODUCT SECTIONS */
+
+section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin: 50px auto;
+    max-width: 1000px;
+}
+
+
+/* CATEGORY HEADINGS */
+
+section h2 {
+    grid-column: 1 / -1;
+    text-align: left;
+    font-size: 2rem;
+    border-bottom: 3px solid #cbb2f5;
+    padding-bottom: 10px;
+    margin-bottom: 5px;
+}
+
+
+/* PRODUCT CARDS */
+
+.product {
+    background-color: white;
+    text-align: left;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+    padding-bottom: 25px;
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+}
+
+
+/* PRODUCT IMAGES */
+
+.product img,
+.productimage {
+    display: block;
+    width: 90%;
+    height: 260px;
+    object-fit: cover;
+    background-color: #eee5ff;
+    margin: 20px auto 0;
+    border-radius: 12px;
+    transition: width 0.3s ease;
+}
+
+/* Assignment-required image transition */
+
+.product img:hover,
+.productimage:hover {
+    width: 95%;
+}
+
+
+/* PRODUCT NAME */
+
+.product h3 {
+    margin: 20px 20px 10px;
+}
+
+
+/* PRODUCT LINKS */
+
+.product a {
+    color: #6f42c1;
+    text-decoration: none;
+}
+
+.product a:hover {
+    color: #2f1747;
+    text-decoration: underline;
+}
+
+
+/* PRODUCT DESCRIPTION */
+
+.product p {
+    padding: 0 20px;
+    line-height: 1.6;
+}
+
+
+/* PRODUCT PRICE */
+
+.price {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #6f42c1;
+}
+
+
+/* =========================
+   ABOUT PAGE
+   ========================= */
+
+.about-card {
+    max-width: 900px;
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    text-align: left;
+    margin: 0 auto 35px;
+    padding: 30px;
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.about-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(47, 23, 71, 0.15);
+}
+
+
+/* OWNER SECTION */
+
+.owner-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+    text-align: left;
+}
+
+.owner-photo {
+    width: 220px;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 16px;
+    border: 4px solid #cbb2f5;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.owner-text,
+.about-text {
+    max-width: 600px;
+}
+
+.owner-text p,
+.about-text p {
+    line-height: 1.7;
+}
+
+
+/* =========================
+   CONTACT PAGE
+   ========================= */
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto 35px;
+}
+
+.contact-card {
+    max-width: 700px;
+    text-align: left;
+    margin: 0 auto 35px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.contact-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(47, 23, 71, 0.15);
+}
+
+.contact-card p {
+    margin: 14px 0;
+    line-height: 1.6;
+}
+
+.contact-card strong {
+    color: #2f1747;
+}
+
+.contact-card a {
+    color: #6f42c1;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.contact-card a:hover {
+    color: #2f1747;
+    text-decoration: underline;
+}
+
+
+/* SOCIAL MEDIA ICONS */
+
+.social-links {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 18px;
+    margin-top: 20px;
+}
+
+.social-links a {
+    width: 45px;
+    height: 45px;
+    background-color: #f7f2ff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease,
+                transform 0.3s ease;
+}
+
+.social-links a:hover {
+    background-color: #cbb2f5;
+    transform: translateY(-3px);
+}
+
+.social-links img {
+    width: 26px;
+    height: 26px;
+    object-fit: contain;
+}
+
+
+/* STORE HOURS */
+
+.hours {
+    list-style: none;
+    padding: 0;
+    margin: 20px auto;
+    max-width: 400px;
+}
+
+.hours li {
+    padding: 8px;
+    border-bottom: 1px solid #eee5ff;
+}
+
+
+/* MAP */
+
+.map-card {
+    max-width: 950px;
+    text-align: left;
+    margin: 0 auto 35px;
+    padding: 30px;
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.map-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(47, 23, 71, 0.15);
+}
+
+.map-card iframe {
+    display: block;
+    width: 100%;
+    max-width: 850px;
+    height: 350px;
+    margin: 20px auto 0;
+    border: 0;
+    border-radius: 12px;
+}
+
+
+/* GENERAL LINKS */
+
+main a {
+    color: #6f42c1;
+}
+
+main a:hover {
+    color: #2f1747;
+}
+
+
+/* FOOTER */
+
+footer {
+    margin-top: 50px;
+    text-align: center;
+    padding: 25px;
+    background-color: #2f1747;
+    color: white;
+}
+
+
+/* =========================
+   MOBILE DESIGN
+   ========================= */
+
+@media (max-width: 700px) {
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header {
+        padding-top: 30px;
+    }
+
+    nav {
+        padding: 10px;
+    }
+
+    nav a {
+        display: block;
+        margin: 5px auto;
+        max-width: 200px;
+    }
+
+    main {
+        padding: 30px 15px;
+    }
+
+    section {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    section h2 {
+        grid-column: 1;
+    }
+
+    .product img,
+    .productimage {
+        width: 90%;
+        height: 230px;
+    }
+
+    .product img:hover,
+    .productimage:hover {
+        width: 95%;
+    }
+
+    .owner-section,
+    .about-card {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .owner-photo {
+        width: 180px;
+        height: 220px;
+    }
+
+    .about-card,
+    .contact-card,
+    .map-card,
+    .card {
+        padding: 22px;
+    }
+
+    .social-links {
+        gap: 12px;
+    }
+
+    .social-links a {
+        width: 40px;
+        height: 40px;
+    }
+
+    .social-links img {
+        width: 23px;
+        height: 23px;
+    }
+
+    .map-card iframe {
+        height: 300px;
+    }
+}
+/* =====================================
+   PANEL & PARCEL — HOMEPAGE UPDATES
+   ===================================== */
+
+/* Category heading with View All link */
+
+.home-section-heading {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  border-bottom: 3px solid #cbb2f5;
+  padding-bottom: 10px;
+  margin-bottom: 5px;
+}
+
+.home-section-heading h2 {
+  border: none;
+  padding: 0;
+  margin: 0;
+  font-size: 2rem;
+  color: #6f42c1;
+  grid-column: auto;
+}
+
+/* View All button */
+
+.view-all {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  flex-shrink: 0;
+  background: #6f42c1;
+  color: white !important;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: bold;
+  padding: 10px 16px;
+  border-radius: 8px;
+  transition: background 0.3s ease,
+              transform 0.3s ease;
+}
+
+.view-all:hover {
+  background: #2f1747;
+  color: white !important;
+  transform: translateY(-2px);
+}
+
+/* Responsive homepage category headings */
+
+@media (max-width: 700px) {
+  .home-section-heading {
+    gap: 12px;
+  }
+
+  .home-section-heading h2 {
+    font-size: 1.45rem;
+  }
+
+  .view-all {
+    font-size: 12px;
+    padding: 9px 11px;
+  }
+}
